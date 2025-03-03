@@ -45,6 +45,18 @@
         button:hover {
             background-color: #0056b3;
         }
+        button.trend-button {
+            background-color: #17a2b8;
+        }
+        button.trend-button:hover {
+            background-color: #138496;
+        }
+        button.ai-button {
+            background-color: #28a745;
+        }
+        button.ai-button:hover {
+            background-color: #218838;
+        }
         .charts {
             display: flex;
             gap: 20px;
@@ -141,7 +153,8 @@
             <select id="categorySelect">
                 <option value="">Select Category</option>
             </select>
-            <button onclick="getPrediction()">Get Success Prediction</button>
+            <button onclick="getPrediction(false)" class="trend-button">Get Trend Prediction</button>
+            <button onclick="getPrediction(true)" class="ai-button">Get AI Prediction</button>
         </div>
         <div id="predictionResult" class="prediction-result" style="display: none;">
             <h2>Prediction Result</h2>
@@ -309,7 +322,7 @@
         }
 
         // Get prediction from server
-        async function getPrediction() {
+        async function getPrediction(forceAI = false) {
             const user = document.getElementById('userSelect').value;
             const category = document.getElementById('categorySelect').value;
             
@@ -328,7 +341,8 @@
                 body: JSON.stringify({
                     user,
                     category,
-                    data: projectData
+                    data: projectData,
+                    forceAI
                 })
             });
             

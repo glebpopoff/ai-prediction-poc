@@ -272,21 +272,21 @@ app.post('/api/predict', async (req, res) => {
 // Endpoint to predict project success
 app.post('/api/predict-success', async (req, res) => {
     try {
-        const { user, category, data } = req.body;
+        const { user, category, data, forceAI } = req.body;
         if (!user || !category || !data) {
             throw new Error('Missing required parameters');
         }
         
-        console.log(`Received prediction request for user: ${user}, category: ${category}`);
+        console.log(`Received prediction request for user: ${user}, category: ${category}, forceAI: ${forceAI}`);
         const stats = processDataForPrediction(data, user, category);
         console.log('Performance stats:', stats);
         
         const ollamaRunning = await isOllamaRunning();
         console.log('Ollama status:', ollamaRunning ? 'running' : 'not running');
         
-        if (ollamaRunning && stats.userCategoryDataPoints < 2) {
-            // Only use AI for new categories or those with limited data
-            console.log('Using AI prediction for limited data...');
+        if (ollamaRunning && (forceAI || stats.userCategoryDataPoints < 2)) {
+            // Use AI for new categories or when forced
+            console.log('Using AI prediction...');
             const prompt = `Analyze the user's potential success in their project category. Here are the key statistics:
 
 User: ${user}
@@ -294,11 +294,12 @@ Category: ${category}
 Current performance in this category: ${stats.userCategoryAvg.toFixed(2)} (based on ${stats.userCategoryDataPoints} projects)
 Overall performance across all categories: ${stats.userOverallAvg.toFixed(2)} (based on ${stats.totalUserDataPoints} projects)
 Category average across all users: ${stats.categoryAvg.toFixed(2)} (based on ${stats.totalCategoryDataPoints} projects)
+Performance trend: ${stats.trend > 0 ? 'improving' : stats.trend < 0 ? 'declining' : 'stable'} (${Math.abs(stats.trend).toFixed(2)} points per project)
 
 Recent projects in this category:
 ${stats.userCategoryData.slice(-3).map(d => `- Rating: ${d.ranking} (${d.date})`).join('\n')}
 
-First provide a rating from 1-5, then explain your reasoning in 2-3 sentences.`;
+First provide a rating from 1-5, then explain your reasoning in 2-3 sentences, considering both historical performance and trend.`;
 
             const response = await fetch('http://localhost:11434/api/generate', {
                 method: 'POST',
@@ -340,7 +341,7 @@ First provide a rating from 1-5, then explain your reasoning in 2-3 sentences.`;
                     }))
                 }
             });
-        } else {
+        } else if (!forceAI) {
             console.log('Using trend-based prediction...');
             const trendDescription = stats.trend > 0 ? 'improving' : stats.trend < 0 ? 'declining' : 'stable';
             const trendValue = Math.abs(stats.trend).toFixed(2);
@@ -368,39 +369,12 @@ First provide a rating from 1-5, then explain your reasoning in 2-3 sentences.`;
                     }))
                 }
             });
+        } else {
+            throw new Error('Ollama is not running');
         }
     } catch (error) {
         console.error('Prediction error:', error);
-        if (!req.body.data || !req.body.user || !req.body.category) {
-            console.error('Invalid request parameters:', req.body);
-            res.status(400).json({ error: 'Invalid or missing parameters' });
-            return;
-        }
-        
-        console.log('Using fallback prediction after error...');
-        const stats = processDataForPrediction(req.body.data, req.body.user, req.body.category);
-        const explanation = `Fallback prediction based on:\n` +
-            `- Historical average: ${stats.userCategoryAvg.toFixed(2)}\n` +
-            `- Recent performance trend: ${stats.trend.toFixed(2)}\n` +
-            `- Recent projects:\n${stats.userCategoryData.slice(-3).map(d => `  • ${d.date}: ${d.ranking}`).join('\n')}`;
-        
-        res.json({ 
-            prediction: stats.predictedValue,
-            historicalAverage: stats.userCategoryAvg,
-            method: 'fallback',
-            explanation,
-            stats: {
-                categoryAverage: stats.userCategoryAvg,
-                predictedValue: stats.predictedValue,
-                trend: stats.trend,
-                overallAverage: stats.userOverallAvg,
-                dataPoints: stats.userCategoryDataPoints,
-                recentPerformance: stats.userCategoryData.slice(-3).map(d => ({
-                    rating: d.ranking,
-                    date: d.date
-                }))
-            }
-        });
+        res.status(500).json({ error: error.message });
     }
 });
 
