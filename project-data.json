@@ -1,0 +1,1850 @@
+[
+  {
+    "user": "John Smith",
+    "category": "Energy",
+    "ranking": 2,
+    "date": "2024-03-04"
+  },
+  {
+    "user": "David Brown",
+    "category": "Entertainment",
+    "ranking": 5,
+    "date": "2024-03-05"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Manufacturing",
+    "ranking": 5,
+    "date": "2024-03-05"
+  },
+  {
+    "user": "John Smith",
+    "category": "Technology",
+    "ranking": 2.6,
+    "date": "2024-03-06"
+  },
+  {
+    "user": "David Brown",
+    "category": "Transportation",
+    "ranking": 2.7,
+    "date": "2024-03-06"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Transportation",
+    "ranking": 3.1,
+    "date": "2024-03-07"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Energy",
+    "ranking": 2.7,
+    "date": "2024-03-09"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Technology",
+    "ranking": 4.7,
+    "date": "2024-03-10"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Entertainment",
+    "ranking": 2.3,
+    "date": "2024-03-10"
+  },
+  {
+    "user": "John Smith",
+    "category": "Manufacturing",
+    "ranking": 3.5,
+    "date": "2024-03-11"
+  },
+  {
+    "user": "John Smith",
+    "category": "Retail",
+    "ranking": 4.8,
+    "date": "2024-03-12"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Manufacturing",
+    "ranking": 4.2,
+    "date": "2024-03-12"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Retail",
+    "ranking": 4.4,
+    "date": "2024-03-12"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Education",
+    "ranking": 3.8,
+    "date": "2024-03-17"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Finance",
+    "ranking": 3.1,
+    "date": "2024-03-19"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Retail",
+    "ranking": 3,
+    "date": "2024-03-19"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Entertainment",
+    "ranking": 4.1,
+    "date": "2024-03-19"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Manufacturing",
+    "ranking": 4.2,
+    "date": "2024-03-19"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Finance",
+    "ranking": 3.6,
+    "date": "2024-03-19"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Healthcare",
+    "ranking": 1.9,
+    "date": "2024-03-22"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Manufacturing",
+    "ranking": 3.1,
+    "date": "2024-03-22"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Technology",
+    "ranking": 3.4,
+    "date": "2024-03-23"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Education",
+    "ranking": 2.9,
+    "date": "2024-03-24"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Technology",
+    "ranking": 4.7,
+    "date": "2024-03-24"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Education",
+    "ranking": 2.5,
+    "date": "2024-03-26"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Manufacturing",
+    "ranking": 2.8,
+    "date": "2024-03-29"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Energy",
+    "ranking": 5,
+    "date": "2024-03-29"
+  },
+  {
+    "user": "David Brown",
+    "category": "Finance",
+    "ranking": 5,
+    "date": "2024-03-30"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Real Estate",
+    "ranking": 2.3,
+    "date": "2024-03-31"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Education",
+    "ranking": 4.6,
+    "date": "2024-04-01"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Finance",
+    "ranking": 3.1,
+    "date": "2024-04-02"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Real Estate",
+    "ranking": 2.9,
+    "date": "2024-04-02"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Retail",
+    "ranking": 4.8,
+    "date": "2024-04-03"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Technology",
+    "ranking": 3.4,
+    "date": "2024-04-03"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Healthcare",
+    "ranking": 3.5,
+    "date": "2024-04-07"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Transportation",
+    "ranking": 4.5,
+    "date": "2024-04-07"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Retail",
+    "ranking": 4.9,
+    "date": "2024-04-09"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Energy",
+    "ranking": 5,
+    "date": "2024-04-09"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Retail",
+    "ranking": 4.9,
+    "date": "2024-04-12"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Healthcare",
+    "ranking": 4.4,
+    "date": "2024-04-12"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Retail",
+    "ranking": 4.2,
+    "date": "2024-04-14"
+  },
+  {
+    "user": "David Brown",
+    "category": "Entertainment",
+    "ranking": 5,
+    "date": "2024-04-15"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Transportation",
+    "ranking": 2.7,
+    "date": "2024-04-16"
+  },
+  {
+    "user": "John Smith",
+    "category": "Finance",
+    "ranking": 2.2,
+    "date": "2024-04-18"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Entertainment",
+    "ranking": 5,
+    "date": "2024-04-18"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Entertainment",
+    "ranking": 5,
+    "date": "2024-04-18"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Healthcare",
+    "ranking": 3.6,
+    "date": "2024-04-20"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Retail",
+    "ranking": 4.8,
+    "date": "2024-04-22"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Finance",
+    "ranking": 2.7,
+    "date": "2024-04-22"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Energy",
+    "ranking": 3.1,
+    "date": "2024-04-23"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Real Estate",
+    "ranking": 3.4,
+    "date": "2024-04-25"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Transportation",
+    "ranking": 4.5,
+    "date": "2024-04-25"
+  },
+  {
+    "user": "John Smith",
+    "category": "Real Estate",
+    "ranking": 4,
+    "date": "2024-04-26"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Education",
+    "ranking": 3.2,
+    "date": "2024-04-27"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Entertainment",
+    "ranking": 5,
+    "date": "2024-05-03"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Healthcare",
+    "ranking": 1.9,
+    "date": "2024-05-04"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Retail",
+    "ranking": 4.4,
+    "date": "2024-05-05"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Education",
+    "ranking": 3.2,
+    "date": "2024-05-06"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Finance",
+    "ranking": 3.7,
+    "date": "2024-05-08"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Technology",
+    "ranking": 3.3,
+    "date": "2024-05-09"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Energy",
+    "ranking": 3.5,
+    "date": "2024-05-09"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Technology",
+    "ranking": 2.1,
+    "date": "2024-05-12"
+  },
+  {
+    "user": "John Smith",
+    "category": "Healthcare",
+    "ranking": 2,
+    "date": "2024-05-13"
+  },
+  {
+    "user": "John Smith",
+    "category": "Real Estate",
+    "ranking": 4,
+    "date": "2024-05-14"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Healthcare",
+    "ranking": 1.9,
+    "date": "2024-05-14"
+  },
+  {
+    "user": "David Brown",
+    "category": "Real Estate",
+    "ranking": 4,
+    "date": "2024-05-14"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Technology",
+    "ranking": 2.1,
+    "date": "2024-05-19"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Education",
+    "ranking": 3.8,
+    "date": "2024-05-19"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Real Estate",
+    "ranking": 2.3,
+    "date": "2024-05-19"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Energy",
+    "ranking": 4.4,
+    "date": "2024-05-20"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Real Estate",
+    "ranking": 4.2,
+    "date": "2024-05-20"
+  },
+  {
+    "user": "David Brown",
+    "category": "Finance",
+    "ranking": 5,
+    "date": "2024-05-21"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Education",
+    "ranking": 2.5,
+    "date": "2024-05-25"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Healthcare",
+    "ranking": 3.7,
+    "date": "2024-05-26"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Healthcare",
+    "ranking": 3.5,
+    "date": "2024-05-26"
+  },
+  {
+    "user": "John Smith",
+    "category": "Healthcare",
+    "ranking": 2,
+    "date": "2024-05-27"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Transportation",
+    "ranking": 3.1,
+    "date": "2024-05-30"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Healthcare",
+    "ranking": 3.5,
+    "date": "2024-06-02"
+  },
+  {
+    "user": "John Smith",
+    "category": "Manufacturing",
+    "ranking": 3.5,
+    "date": "2024-06-06"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Retail",
+    "ranking": 2.2,
+    "date": "2024-06-07"
+  },
+  {
+    "user": "John Smith",
+    "category": "Education",
+    "ranking": 4.9,
+    "date": "2024-06-08"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Transportation",
+    "ranking": 3.4,
+    "date": "2024-06-09"
+  },
+  {
+    "user": "David Brown",
+    "category": "Retail",
+    "ranking": 2.6,
+    "date": "2024-06-14"
+  },
+  {
+    "user": "David Brown",
+    "category": "Education",
+    "ranking": 2.7,
+    "date": "2024-06-15"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Energy",
+    "ranking": 2,
+    "date": "2024-06-16"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Energy",
+    "ranking": 3.1,
+    "date": "2024-06-17"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Real Estate",
+    "ranking": 4.2,
+    "date": "2024-06-17"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Education",
+    "ranking": 4.6,
+    "date": "2024-06-18"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Real Estate",
+    "ranking": 2.9,
+    "date": "2024-06-19"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Manufacturing",
+    "ranking": 4.2,
+    "date": "2024-06-19"
+  },
+  {
+    "user": "David Brown",
+    "category": "Healthcare",
+    "ranking": 4.7,
+    "date": "2024-06-21"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Entertainment",
+    "ranking": 3.1,
+    "date": "2024-06-21"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Technology",
+    "ranking": 3.4,
+    "date": "2024-06-21"
+  },
+  {
+    "user": "John Smith",
+    "category": "Education",
+    "ranking": 4.9,
+    "date": "2024-06-22"
+  },
+  {
+    "user": "John Smith",
+    "category": "Retail",
+    "ranking": 4.8,
+    "date": "2024-06-23"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Healthcare",
+    "ranking": 4.4,
+    "date": "2024-06-23"
+  },
+  {
+    "user": "John Smith",
+    "category": "Entertainment",
+    "ranking": 4.3,
+    "date": "2024-06-25"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Entertainment",
+    "ranking": 4.3,
+    "date": "2024-06-25"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Manufacturing",
+    "ranking": 4,
+    "date": "2024-06-25"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Healthcare",
+    "ranking": 3.7,
+    "date": "2024-06-26"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Real Estate",
+    "ranking": 4.2,
+    "date": "2024-06-28"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Manufacturing",
+    "ranking": 4.2,
+    "date": "2024-07-08"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Technology",
+    "ranking": 4.7,
+    "date": "2024-07-10"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Technology",
+    "ranking": 4.3,
+    "date": "2024-07-10"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Retail",
+    "ranking": 4.9,
+    "date": "2024-07-13"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Transportation",
+    "ranking": 4.9,
+    "date": "2024-07-14"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Technology",
+    "ranking": 4.7,
+    "date": "2024-07-15"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Manufacturing",
+    "ranking": 4.2,
+    "date": "2024-07-16"
+  },
+  {
+    "user": "David Brown",
+    "category": "Transportation",
+    "ranking": 2.7,
+    "date": "2024-07-20"
+  },
+  {
+    "user": "David Brown",
+    "category": "Education",
+    "ranking": 2.7,
+    "date": "2024-07-21"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Entertainment",
+    "ranking": 4.1,
+    "date": "2024-07-21"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Healthcare",
+    "ranking": 4.3,
+    "date": "2024-07-22"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Education",
+    "ranking": 2.5,
+    "date": "2024-07-22"
+  },
+  {
+    "user": "David Brown",
+    "category": "Manufacturing",
+    "ranking": 5,
+    "date": "2024-07-22"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Transportation",
+    "ranking": 3.4,
+    "date": "2024-07-24"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Finance",
+    "ranking": 5,
+    "date": "2024-07-24"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Retail",
+    "ranking": 2.2,
+    "date": "2024-07-25"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Healthcare",
+    "ranking": 1.9,
+    "date": "2024-07-27"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Energy",
+    "ranking": 5,
+    "date": "2024-07-31"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Education",
+    "ranking": 2.6,
+    "date": "2024-08-01"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Entertainment",
+    "ranking": 2.3,
+    "date": "2024-08-01"
+  },
+  {
+    "user": "John Smith",
+    "category": "Transportation",
+    "ranking": 5,
+    "date": "2024-08-02"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Healthcare",
+    "ranking": 3.5,
+    "date": "2024-08-02"
+  },
+  {
+    "user": "David Brown",
+    "category": "Manufacturing",
+    "ranking": 5,
+    "date": "2024-08-02"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Education",
+    "ranking": 3.8,
+    "date": "2024-08-02"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Transportation",
+    "ranking": 2.7,
+    "date": "2024-08-03"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Retail",
+    "ranking": 3.2,
+    "date": "2024-08-03"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Real Estate",
+    "ranking": 4.7,
+    "date": "2024-08-07"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Technology",
+    "ranking": 3.4,
+    "date": "2024-08-07"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Entertainment",
+    "ranking": 4.3,
+    "date": "2024-08-08"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Real Estate",
+    "ranking": 3.4,
+    "date": "2024-08-08"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Transportation",
+    "ranking": 4.6,
+    "date": "2024-08-08"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Energy",
+    "ranking": 2,
+    "date": "2024-08-09"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Technology",
+    "ranking": 3.9,
+    "date": "2024-08-11"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Entertainment",
+    "ranking": 5,
+    "date": "2024-08-13"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Energy",
+    "ranking": 3.1,
+    "date": "2024-08-13"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Real Estate",
+    "ranking": 2.3,
+    "date": "2024-08-15"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Healthcare",
+    "ranking": 4.4,
+    "date": "2024-08-17"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Entertainment",
+    "ranking": 1.6,
+    "date": "2024-08-18"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Retail",
+    "ranking": 2.2,
+    "date": "2024-08-19"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Manufacturing",
+    "ranking": 2.8,
+    "date": "2024-08-20"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Technology",
+    "ranking": 3.9,
+    "date": "2024-08-20"
+  },
+  {
+    "user": "David Brown",
+    "category": "Education",
+    "ranking": 2.7,
+    "date": "2024-08-22"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Technology",
+    "ranking": 3.4,
+    "date": "2024-08-24"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Entertainment",
+    "ranking": 2.3,
+    "date": "2024-08-24"
+  },
+  {
+    "user": "David Brown",
+    "category": "Finance",
+    "ranking": 5,
+    "date": "2024-08-25"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Healthcare",
+    "ranking": 2.4,
+    "date": "2024-08-25"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Energy",
+    "ranking": 5,
+    "date": "2024-08-28"
+  },
+  {
+    "user": "David Brown",
+    "category": "Entertainment",
+    "ranking": 5,
+    "date": "2024-08-29"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Technology",
+    "ranking": 4.7,
+    "date": "2024-08-30"
+  },
+  {
+    "user": "David Brown",
+    "category": "Technology",
+    "ranking": 2.8,
+    "date": "2024-08-30"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Energy",
+    "ranking": 1.9,
+    "date": "2024-08-30"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Real Estate",
+    "ranking": 4.4,
+    "date": "2024-08-31"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Healthcare",
+    "ranking": 3.6,
+    "date": "2024-08-31"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Healthcare",
+    "ranking": 4.3,
+    "date": "2024-09-01"
+  },
+  {
+    "user": "John Smith",
+    "category": "Transportation",
+    "ranking": 5,
+    "date": "2024-09-03"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Education",
+    "ranking": 2.5,
+    "date": "2024-09-05"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Technology",
+    "ranking": 3.9,
+    "date": "2024-09-09"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Real Estate",
+    "ranking": 4.7,
+    "date": "2024-09-11"
+  },
+  {
+    "user": "David Brown",
+    "category": "Real Estate",
+    "ranking": 4,
+    "date": "2024-09-12"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Technology",
+    "ranking": 3.9,
+    "date": "2024-09-12"
+  },
+  {
+    "user": "David Brown",
+    "category": "Real Estate",
+    "ranking": 4,
+    "date": "2024-09-13"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Education",
+    "ranking": 2.9,
+    "date": "2024-09-14"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Transportation",
+    "ranking": 2.7,
+    "date": "2024-09-15"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Manufacturing",
+    "ranking": 3.1,
+    "date": "2024-09-17"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Manufacturing",
+    "ranking": 3.1,
+    "date": "2024-09-17"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Manufacturing",
+    "ranking": 4,
+    "date": "2024-09-17"
+  },
+  {
+    "user": "John Smith",
+    "category": "Technology",
+    "ranking": 2.6,
+    "date": "2024-09-18"
+  },
+  {
+    "user": "John Smith",
+    "category": "Real Estate",
+    "ranking": 4,
+    "date": "2024-09-18"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Entertainment",
+    "ranking": 3.1,
+    "date": "2024-09-21"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Entertainment",
+    "ranking": 3.1,
+    "date": "2024-09-22"
+  },
+  {
+    "user": "John Smith",
+    "category": "Real Estate",
+    "ranking": 4,
+    "date": "2024-09-23"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Entertainment",
+    "ranking": 2.9,
+    "date": "2024-09-23"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Energy",
+    "ranking": 3.5,
+    "date": "2024-09-25"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Manufacturing",
+    "ranking": 3.9,
+    "date": "2024-10-01"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Energy",
+    "ranking": 4.4,
+    "date": "2024-10-01"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Real Estate",
+    "ranking": 4.7,
+    "date": "2024-10-01"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Education",
+    "ranking": 2.5,
+    "date": "2024-10-02"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Energy",
+    "ranking": 5,
+    "date": "2024-10-03"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Entertainment",
+    "ranking": 2.9,
+    "date": "2024-10-03"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Healthcare",
+    "ranking": 2.4,
+    "date": "2024-10-03"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Retail",
+    "ranking": 4.8,
+    "date": "2024-10-06"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Manufacturing",
+    "ranking": 4.6,
+    "date": "2024-10-06"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Real Estate",
+    "ranking": 2.9,
+    "date": "2024-10-06"
+  },
+  {
+    "user": "John Smith",
+    "category": "Finance",
+    "ranking": 2.2,
+    "date": "2024-10-07"
+  },
+  {
+    "user": "John Smith",
+    "category": "Education",
+    "ranking": 4.9,
+    "date": "2024-10-07"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Finance",
+    "ranking": 4.6,
+    "date": "2024-10-07"
+  },
+  {
+    "user": "John Smith",
+    "category": "Entertainment",
+    "ranking": 4.3,
+    "date": "2024-10-08"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Energy",
+    "ranking": 2.7,
+    "date": "2024-10-08"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Energy",
+    "ranking": 2.7,
+    "date": "2024-10-09"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Transportation",
+    "ranking": 4.9,
+    "date": "2024-10-10"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Transportation",
+    "ranking": 3.1,
+    "date": "2024-10-10"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Technology",
+    "ranking": 3.4,
+    "date": "2024-10-11"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Healthcare",
+    "ranking": 4.3,
+    "date": "2024-10-14"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Retail",
+    "ranking": 4.8,
+    "date": "2024-10-15"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Transportation",
+    "ranking": 4.9,
+    "date": "2024-10-16"
+  },
+  {
+    "user": "David Brown",
+    "category": "Healthcare",
+    "ranking": 4.7,
+    "date": "2024-10-16"
+  },
+  {
+    "user": "John Smith",
+    "category": "Energy",
+    "ranking": 2,
+    "date": "2024-10-17"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Finance",
+    "ranking": 2.1,
+    "date": "2024-10-18"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Transportation",
+    "ranking": 2.2,
+    "date": "2024-10-18"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Healthcare",
+    "ranking": 3.5,
+    "date": "2024-10-20"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Transportation",
+    "ranking": 3.1,
+    "date": "2024-10-20"
+  },
+  {
+    "user": "David Brown",
+    "category": "Entertainment",
+    "ranking": 5,
+    "date": "2024-10-22"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Retail",
+    "ranking": 3,
+    "date": "2024-10-24"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Education",
+    "ranking": 4.3,
+    "date": "2024-10-24"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Education",
+    "ranking": 4.3,
+    "date": "2024-10-25"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Energy",
+    "ranking": 4.4,
+    "date": "2024-10-28"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Manufacturing",
+    "ranking": 3.9,
+    "date": "2024-10-31"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Manufacturing",
+    "ranking": 4.2,
+    "date": "2024-11-01"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Technology",
+    "ranking": 4.3,
+    "date": "2024-11-04"
+  },
+  {
+    "user": "John Smith",
+    "category": "Finance",
+    "ranking": 2.2,
+    "date": "2024-11-05"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Finance",
+    "ranking": 4.7,
+    "date": "2024-11-05"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Retail",
+    "ranking": 2.2,
+    "date": "2024-11-06"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Transportation",
+    "ranking": 2.5,
+    "date": "2024-11-06"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Education",
+    "ranking": 2.5,
+    "date": "2024-11-08"
+  },
+  {
+    "user": "David Brown",
+    "category": "Healthcare",
+    "ranking": 4.7,
+    "date": "2024-11-08"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Healthcare",
+    "ranking": 3.5,
+    "date": "2024-11-08"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Transportation",
+    "ranking": 3.4,
+    "date": "2024-11-09"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Entertainment",
+    "ranking": 5,
+    "date": "2024-11-11"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Transportation",
+    "ranking": 2.2,
+    "date": "2024-11-12"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Entertainment",
+    "ranking": 5,
+    "date": "2024-11-13"
+  },
+  {
+    "user": "John Smith",
+    "category": "Finance",
+    "ranking": 2.2,
+    "date": "2024-11-15"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Retail",
+    "ranking": 2.4,
+    "date": "2024-11-15"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Energy",
+    "ranking": 2.7,
+    "date": "2024-11-16"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Manufacturing",
+    "ranking": 4.2,
+    "date": "2024-11-16"
+  },
+  {
+    "user": "David Brown",
+    "category": "Retail",
+    "ranking": 2.6,
+    "date": "2024-11-17"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Technology",
+    "ranking": 4.7,
+    "date": "2024-11-17"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Technology",
+    "ranking": 4.7,
+    "date": "2024-11-18"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Finance",
+    "ranking": 2.1,
+    "date": "2024-11-22"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Energy",
+    "ranking": 1.9,
+    "date": "2024-11-24"
+  },
+  {
+    "user": "John Smith",
+    "category": "Technology",
+    "ranking": 2.6,
+    "date": "2024-11-25"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Education",
+    "ranking": 2.6,
+    "date": "2024-11-27"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Manufacturing",
+    "ranking": 4.6,
+    "date": "2024-11-27"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Energy",
+    "ranking": 5,
+    "date": "2024-11-29"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Retail",
+    "ranking": 3,
+    "date": "2024-12-02"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Education",
+    "ranking": 3.8,
+    "date": "2024-12-02"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Retail",
+    "ranking": 4.4,
+    "date": "2024-12-06"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Real Estate",
+    "ranking": 3.3,
+    "date": "2024-12-07"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Transportation",
+    "ranking": 2.2,
+    "date": "2024-12-08"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Manufacturing",
+    "ranking": 5,
+    "date": "2024-12-08"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Manufacturing",
+    "ranking": 4.2,
+    "date": "2024-12-10"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Real Estate",
+    "ranking": 3.4,
+    "date": "2024-12-12"
+  },
+  {
+    "user": "David Brown",
+    "category": "Manufacturing",
+    "ranking": 5,
+    "date": "2024-12-12"
+  },
+  {
+    "user": "John Smith",
+    "category": "Entertainment",
+    "ranking": 4.3,
+    "date": "2024-12-17"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Education",
+    "ranking": 4.3,
+    "date": "2024-12-18"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Real Estate",
+    "ranking": 4.4,
+    "date": "2024-12-19"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Healthcare",
+    "ranking": 3.5,
+    "date": "2024-12-19"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Transportation",
+    "ranking": 4.5,
+    "date": "2024-12-19"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Manufacturing",
+    "ranking": 4.6,
+    "date": "2024-12-20"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Entertainment",
+    "ranking": 4.3,
+    "date": "2024-12-21"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Transportation",
+    "ranking": 2.5,
+    "date": "2024-12-24"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Healthcare",
+    "ranking": 4.3,
+    "date": "2024-12-27"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Education",
+    "ranking": 2.9,
+    "date": "2024-12-29"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Education",
+    "ranking": 4.3,
+    "date": "2024-12-29"
+  },
+  {
+    "user": "John Smith",
+    "category": "Entertainment",
+    "ranking": 4.3,
+    "date": "2024-12-30"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Technology",
+    "ranking": 3.3,
+    "date": "2024-12-31"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Transportation",
+    "ranking": 4.6,
+    "date": "2025-01-02"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Technology",
+    "ranking": 2.1,
+    "date": "2025-01-03"
+  },
+  {
+    "user": "John Smith",
+    "category": "Education",
+    "ranking": 4.9,
+    "date": "2025-01-06"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Healthcare",
+    "ranking": 3.7,
+    "date": "2025-01-06"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Energy",
+    "ranking": 3.1,
+    "date": "2025-01-07"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Healthcare",
+    "ranking": 2.4,
+    "date": "2025-01-08"
+  },
+  {
+    "user": "David Brown",
+    "category": "Energy",
+    "ranking": 4.2,
+    "date": "2025-01-10"
+  },
+  {
+    "user": "David Brown",
+    "category": "Education",
+    "ranking": 2.7,
+    "date": "2025-01-11"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Manufacturing",
+    "ranking": 4.6,
+    "date": "2025-01-11"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Finance",
+    "ranking": 2.7,
+    "date": "2025-01-12"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Finance",
+    "ranking": 4.7,
+    "date": "2025-01-12"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Retail",
+    "ranking": 4.2,
+    "date": "2025-01-17"
+  },
+  {
+    "user": "Sarah Davis",
+    "category": "Real Estate",
+    "ranking": 3.3,
+    "date": "2025-01-18"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Retail",
+    "ranking": 2.4,
+    "date": "2025-01-20"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Finance",
+    "ranking": 3.6,
+    "date": "2025-01-20"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Finance",
+    "ranking": 3.6,
+    "date": "2025-01-23"
+  },
+  {
+    "user": "John Smith",
+    "category": "Energy",
+    "ranking": 2,
+    "date": "2025-01-25"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Real Estate",
+    "ranking": 4.3,
+    "date": "2025-01-26"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Retail",
+    "ranking": 4.9,
+    "date": "2025-01-29"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Technology",
+    "ranking": 4.3,
+    "date": "2025-01-30"
+  },
+  {
+    "user": "David Brown",
+    "category": "Real Estate",
+    "ranking": 4,
+    "date": "2025-02-01"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Entertainment",
+    "ranking": 1.6,
+    "date": "2025-02-01"
+  },
+  {
+    "user": "David Brown",
+    "category": "Transportation",
+    "ranking": 2.7,
+    "date": "2025-02-03"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Finance",
+    "ranking": 5,
+    "date": "2025-02-03"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Technology",
+    "ranking": 3.4,
+    "date": "2025-02-03"
+  },
+  {
+    "user": "Michael Chen",
+    "category": "Entertainment",
+    "ranking": 5,
+    "date": "2025-02-04"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Technology",
+    "ranking": 2.1,
+    "date": "2025-02-05"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Technology",
+    "ranking": 3.4,
+    "date": "2025-02-06"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Entertainment",
+    "ranking": 4.1,
+    "date": "2025-02-06"
+  },
+  {
+    "user": "David Brown",
+    "category": "Manufacturing",
+    "ranking": 5,
+    "date": "2025-02-08"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Healthcare",
+    "ranking": 3.7,
+    "date": "2025-02-09"
+  },
+  {
+    "user": "David Brown",
+    "category": "Transportation",
+    "ranking": 2.7,
+    "date": "2025-02-10"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Entertainment",
+    "ranking": 1.6,
+    "date": "2025-02-14"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Entertainment",
+    "ranking": 4.3,
+    "date": "2025-02-16"
+  },
+  {
+    "user": "Emma Wilson",
+    "category": "Finance",
+    "ranking": 4.6,
+    "date": "2025-02-17"
+  },
+  {
+    "user": "James Taylor",
+    "category": "Healthcare",
+    "ranking": 4.4,
+    "date": "2025-02-17"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Retail",
+    "ranking": 4.2,
+    "date": "2025-02-17"
+  },
+  {
+    "user": "David Brown",
+    "category": "Technology",
+    "ranking": 2.8,
+    "date": "2025-02-18"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Healthcare",
+    "ranking": 3.6,
+    "date": "2025-02-18"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Real Estate",
+    "ranking": 4.3,
+    "date": "2025-02-18"
+  },
+  {
+    "user": "David Brown",
+    "category": "Energy",
+    "ranking": 4.2,
+    "date": "2025-02-20"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Real Estate",
+    "ranking": 4.3,
+    "date": "2025-02-20"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Transportation",
+    "ranking": 2.2,
+    "date": "2025-02-23"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Retail",
+    "ranking": 3.2,
+    "date": "2025-02-23"
+  },
+  {
+    "user": "John Smith",
+    "category": "Transportation",
+    "ranking": 5,
+    "date": "2025-02-24"
+  },
+  {
+    "user": "John Smith",
+    "category": "Healthcare",
+    "ranking": 2,
+    "date": "2025-02-26"
+  },
+  {
+    "user": "Lisa Anderson",
+    "category": "Finance",
+    "ranking": 3.7,
+    "date": "2025-02-26"
+  },
+  {
+    "user": "John Smith",
+    "category": "Technology",
+    "ranking": 2.6,
+    "date": "2025-02-27"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Energy",
+    "ranking": 1.9,
+    "date": "2025-02-27"
+  },
+  {
+    "user": "Robert Johnson",
+    "category": "Healthcare",
+    "ranking": 2.4,
+    "date": "2025-03-01"
+  },
+  {
+    "user": "Jennifer Lee",
+    "category": "Transportation",
+    "ranking": 4.5,
+    "date": "2025-03-01"
+  },
+  {
+    "user": "Maria Garcia",
+    "category": "Retail",
+    "ranking": 4.4,
+    "date": "2025-03-03"
+  }
+]
