@@ -1,0 +1,98 @@
+[
+  {
+    "month": "Jan 2023",
+    "value": 9324.11
+  },
+  {
+    "month": "Feb 2023",
+    "value": 8146.79
+  },
+  {
+    "month": "Mar 2023",
+    "value": 7382.42
+  },
+  {
+    "month": "Apr 2023",
+    "value": 7303.75
+  },
+  {
+    "month": "May 2023",
+    "value": 7989.97
+  },
+  {
+    "month": "Jun 2023",
+    "value": 9097.38
+  },
+  {
+    "month": "Jul 2023",
+    "value": 9903.93
+  },
+  {
+    "month": "Aug 2023",
+    "value": 12492.47
+  },
+  {
+    "month": "Sep 2023",
+    "value": 13369.74
+  },
+  {
+    "month": "Oct 2023",
+    "value": 13020.06
+  },
+  {
+    "month": "Nov 2023",
+    "value": 12607.41
+  },
+  {
+    "month": "Dec 2023",
+    "value": 12211.24
+  },
+  {
+    "month": "Jan 2024",
+    "value": 10101.81
+  },
+  {
+    "month": "Feb 2024",
+    "value": 9760.03
+  },
+  {
+    "month": "Mar 2024",
+    "value": 8726.78
+  },
+  {
+    "month": "Apr 2024",
+    "value": 6478.49
+  },
+  {
+    "month": "May 2024",
+    "value": 7492.89
+  },
+  {
+    "month": "Jun 2024",
+    "value": 9228.02
+  },
+  {
+    "month": "Jul 2024",
+    "value": 10771.42
+  },
+  {
+    "month": "Aug 2024",
+    "value": 11373.08
+  },
+  {
+    "month": "Sep 2024",
+    "value": 12573.2
+  },
+  {
+    "month": "Oct 2024",
+    "value": 13479.17
+  },
+  {
+    "month": "Nov 2024",
+    "value": 12317.63
+  },
+  {
+    "month": "Dec 2024",
+    "value": 11611.73
+  }
+]
