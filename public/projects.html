@@ -95,6 +95,17 @@
         nav a:hover {
             text-decoration: underline;
         }
+        .more-info {
+            margin-top: 10px;
+        }
+        .more-info-content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            white-space: pre-wrap;
+        }
     </style>
 </head>
 <body>
@@ -123,6 +134,10 @@
             <h3>Success Prediction</h3>
             <div class="prediction-score"></div>
             <p class="prediction-method"></p>
+            <div class="more-info">
+                <button onclick="toggleMoreInfo()">Show More Information</button>
+                <div id="moreInfo" class="more-info-content"></div>
+            </div>
         </div>
         
         <div class="charts-container">
@@ -273,6 +288,18 @@
             });
         }
 
+        function toggleMoreInfo() {
+            const moreInfo = document.getElementById('moreInfo');
+            const button = moreInfo.previousElementSibling;
+            if (moreInfo.style.display === 'none') {
+                moreInfo.style.display = 'block';
+                button.textContent = 'Hide More Information';
+            } else {
+                moreInfo.style.display = 'none';
+                button.textContent = 'Show More Information';
+            }
+        }
+
         async function getPrediction() {
             const user = document.getElementById('user').value;
             const category = document.getElementById('category').value;
@@ -298,6 +325,14 @@
                 `${score}/5.0 Stars`;
             predictionDiv.querySelector('.prediction-method').textContent = 
                 `Prediction Method: ${result.method === 'ollama' ? 'AI (Ollama)' : 'Statistical Analysis'}`;
+            
+            const moreInfo = document.getElementById('moreInfo');
+            moreInfo.innerHTML = result.explanation;
+            
+            // Reset more info button
+            const button = moreInfo.previousElementSibling;
+            button.textContent = 'Show More Information';
+            moreInfo.style.display = 'none';
         }
 
         // Initial load

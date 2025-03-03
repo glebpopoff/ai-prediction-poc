@@ -890,8 +890,20 @@
   {
     "user": "David Brown",
     "category": "Entertainment",
-    "ranking": 5,
+    "ranking": 2.5,
     "date": "2024-08-29"
+  },
+  {
+    "user": "David Brown",
+    "category": "Entertainment",
+    "ranking": 1.5,
+    "date": "2024-09-29"
+  },
+  {
+    "user": "David Brown",
+    "category": "Entertainment",
+    "ranking": 3.5,
+    "date": "2024-02-29"
   },
   {
     "user": "Sarah Davis",

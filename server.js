@@ -49,14 +49,45 @@ function simplePrediction(data) {
     return average * (1 + (Math.random() * 0.1 - 0.05));
 }
 
-// Simple project success prediction
-function simpleProjectPrediction(data, user, category) {
-    console.log(`Calculating fallback prediction for user: ${user}, category: ${category}`);
+// Calculate trend from historical data
+function calculateTrend(data) {
+    if (data.length < 2) return 0;
+    
+    // Sort by date
+    const sortedData = [...data].sort((a, b) => new Date(a.date) - new Date(b.date));
+    
+    // Calculate slope using linear regression
+    const n = sortedData.length;
+    const xValues = Array.from({length: n}, (_, i) => i);
+    const yValues = sortedData.map(d => d.ranking);
+    
+    const xMean = xValues.reduce((a, b) => a + b, 0) / n;
+    const yMean = yValues.reduce((a, b) => a + b, 0) / n;
+    
+    const numerator = xValues.reduce((sum, x, i) => sum + (x - xMean) * (yValues[i] - yMean), 0);
+    const denominator = xValues.reduce((sum, x) => sum + Math.pow(x - xMean, 2), 0);
+    
+    return denominator === 0 ? 0 : numerator / denominator;
+}
+
+// Process data for prediction
+function processDataForPrediction(data, user, category) {
     // Get user's performance in this category
     const userCategoryData = data.filter(d => d.user === user && d.category === category);
     const userCategoryAvg = userCategoryData.length > 0 
         ? userCategoryData.reduce((acc, curr) => acc + curr.ranking, 0) / userCategoryData.length 
         : 0;
+
+    // Calculate trend
+    const trend = calculateTrend(userCategoryData);
+    
+    // Calculate predicted value based on trend
+    let predictedValue = userCategoryAvg;
+    if (userCategoryData.length >= 2) {
+        // Adjust prediction based on trend
+        const trendImpact = trend * 2; // Project trend forward
+        predictedValue = Math.min(5, Math.max(1, userCategoryAvg + trendImpact));
+    }
 
     // Get user's overall performance
     const userOverallData = data.filter(d => d.user === user);
@@ -70,20 +101,33 @@ function simpleProjectPrediction(data, user, category) {
         ? categoryData.reduce((acc, curr) => acc + curr.ranking, 0) / categoryData.length
         : 0;
 
-    console.log('Prediction factors:', {
+    // Sort data by date for trend analysis
+    const sortedCategoryData = [...userCategoryData].sort((a, b) => new Date(a.date) - new Date(b.date));
+
+    return {
+        userCategoryData: sortedCategoryData,
         userCategoryAvg,
+        predictedValue,
+        trend,
         userOverallAvg,
         categoryAvg,
         userCategoryDataPoints: userCategoryData.length,
         totalUserDataPoints: userOverallData.length,
         totalCategoryDataPoints: categoryData.length
-    });
+    };
+}
+
+// Simple project success prediction
+function simpleProjectPrediction(data, user, category) {
+    console.log(`Calculating fallback prediction for user: ${user}, category: ${category}`);
+    const stats = processDataForPrediction(data, user, category);
+    console.log('Prediction factors:', stats);
 
     // Weight the different factors
     const prediction = (
-        (userCategoryAvg * 0.5) + // 50% weight on user's performance in this category
-        (userOverallAvg * 0.3) +  // 30% weight on user's overall performance
-        (categoryAvg * 0.2)       // 20% weight on category average
+        (stats.userCategoryAvg * 0.5) + // 50% weight on user's performance in this category
+        (stats.userOverallAvg * 0.3) +  // 30% weight on user's overall performance
+        (stats.categoryAvg * 0.2)       // 20% weight on category average
     ) || 3; // Default to 3 if no data
 
     // Add small random variation
@@ -98,6 +142,7 @@ async function processOllamaResponse(response) {
         console.log('Processing Ollama response stream...');
         const reader = response.body;
         let fullResponse = '';
+        let prediction = null;
         
         for await (const chunk of reader) {
             const text = new TextDecoder().decode(chunk);
@@ -108,6 +153,16 @@ async function processOllamaResponse(response) {
                     const data = JSON.parse(line);
                     if (data.response) {
                         fullResponse += data.response;
+                        // If we don't have a prediction yet, try to find one
+                        if (prediction === null) {
+                            const match = fullResponse.match(/\d+(\.\d+)?/);
+                            if (match) {
+                                prediction = parseFloat(match[0]);
+                                if (prediction >= 1 && prediction <= 5) {
+                                    console.log('Found prediction:', prediction);
+                                }
+                            }
+                        }
                     }
                 } catch (e) {
                     console.error('Error parsing JSON line:', e);
@@ -116,14 +171,22 @@ async function processOllamaResponse(response) {
         }
         
         console.log('Full Ollama response:', fullResponse);
-        // Extract the first number from the response
-        const match = fullResponse.match(/\d+(\.\d+)?/);
-        if (match) {
-            const prediction = parseFloat(match[0]);
-            console.log('Extracted prediction:', prediction);
-            return prediction;
+        if (prediction === null) {
+            // Try one last time to find a prediction
+            const match = fullResponse.match(/\d+(\.\d+)?/);
+            if (match) {
+                prediction = parseFloat(match[0]);
+            }
         }
-        throw new Error('No numeric prediction found in response');
+        
+        if (prediction === null) {
+            throw new Error('No numeric prediction found in response');
+        }
+        
+        return {
+            prediction,
+            fullResponse: fullResponse.trim()
+        };
     } catch (error) {
         console.error('Error processing Ollama response:', error);
         throw error;
@@ -215,20 +278,40 @@ app.post('/api/predict-success', async (req, res) => {
         }
         
         console.log(`Received prediction request for user: ${user}, category: ${category}`);
+        const stats = processDataForPrediction(data, user, category);
+        console.log('Performance stats:', stats);
+        
         const ollamaRunning = await isOllamaRunning();
         console.log('Ollama status:', ollamaRunning ? 'running' : 'not running');
         
-        if (ollamaRunning) {
-            console.log('Attempting to call Ollama API...');
-            // Call Ollama API
+        if (ollamaRunning && stats.userCategoryDataPoints < 2) {
+            // Only use AI for new categories or those with limited data
+            console.log('Using AI prediction for limited data...');
+            const prompt = `Analyze the user's potential success in their project category. Here are the key statistics:
+
+User: ${user}
+Category: ${category}
+Current performance in this category: ${stats.userCategoryAvg.toFixed(2)} (based on ${stats.userCategoryDataPoints} projects)
+Overall performance across all categories: ${stats.userOverallAvg.toFixed(2)} (based on ${stats.totalUserDataPoints} projects)
+Category average across all users: ${stats.categoryAvg.toFixed(2)} (based on ${stats.totalCategoryDataPoints} projects)
+
+Recent projects in this category:
+${stats.userCategoryData.slice(-3).map(d => `- Rating: ${d.ranking} (${d.date})`).join('\n')}
+
+First provide a rating from 1-5, then explain your reasoning in 2-3 sentences.`;
+
             const response = await fetch('http://localhost:11434/api/generate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    model: 'llama2',
-                    prompt: `Based on this project performance data, predict a success score between 1 and 5 for user "${user}" in the "${category}" category. Only respond with a single number, no other text. Here's the data: ${JSON.stringify(data)}`
+                    model: 'mistral',
+                    prompt,
+                    options: {
+                        temperature: 0.3,
+                        top_p: 0.9
+                    }
                 })
             });
 
@@ -237,36 +320,86 @@ app.post('/api/predict-success', async (req, res) => {
                 throw new Error(`Ollama API error: ${response.status}`);
             }
 
-            const prediction = await processOllamaResponse(response);
+            const { prediction, fullResponse } = await processOllamaResponse(response);
             const normalizedPrediction = Math.min(5, Math.max(1, prediction));
-            console.log('Final AI prediction:', normalizedPrediction);
             
             res.json({ 
                 prediction: normalizedPrediction,
-                method: 'ollama'
+                historicalAverage: stats.userCategoryAvg,
+                method: 'ollama',
+                explanation: fullResponse,
+                stats: {
+                    categoryAverage: stats.userCategoryAvg,
+                    predictedValue: stats.predictedValue,
+                    trend: stats.trend,
+                    overallAverage: stats.userOverallAvg,
+                    dataPoints: stats.userCategoryDataPoints,
+                    recentPerformance: stats.userCategoryData.slice(-3).map(d => ({
+                        rating: d.ranking,
+                        date: d.date
+                    }))
+                }
             });
         } else {
-            console.log('Using fallback prediction method...');
-            // Fallback to simple prediction
-            const prediction = simpleProjectPrediction(data, user, category);
+            console.log('Using trend-based prediction...');
+            const trendDescription = stats.trend > 0 ? 'improving' : stats.trend < 0 ? 'declining' : 'stable';
+            const trendValue = Math.abs(stats.trend).toFixed(2);
+            
+            const explanation = `Trend-based prediction:\n` +
+                `- Historical average: ${stats.userCategoryAvg.toFixed(2)}\n` +
+                `- Performance trend: ${trendDescription} (${trendValue} points per project)\n` +
+                `- Recent projects:\n${stats.userCategoryData.slice(-3).map(d => `  • ${d.date}: ${d.ranking}`).join('\n')}\n\n` +
+                `The prediction considers both the historical average and the ${trendDescription} trend in performance.`;
+            
             res.json({ 
-                prediction,
-                method: 'fallback'
+                prediction: stats.predictedValue,
+                historicalAverage: stats.userCategoryAvg,
+                method: 'trend-based',
+                explanation,
+                stats: {
+                    categoryAverage: stats.userCategoryAvg,
+                    predictedValue: stats.predictedValue,
+                    trend: stats.trend,
+                    overallAverage: stats.userOverallAvg,
+                    dataPoints: stats.userCategoryDataPoints,
+                    recentPerformance: stats.userCategoryData.slice(-3).map(d => ({
+                        rating: d.ranking,
+                        date: d.date
+                    }))
+                }
             });
         }
     } catch (error) {
         console.error('Prediction error:', error);
-        // Fallback to simple prediction on error
         if (!req.body.data || !req.body.user || !req.body.category) {
             console.error('Invalid request parameters:', req.body);
             res.status(400).json({ error: 'Invalid or missing parameters' });
             return;
         }
+        
         console.log('Using fallback prediction after error...');
-        const prediction = simpleProjectPrediction(req.body.data, req.body.user, req.body.category);
+        const stats = processDataForPrediction(req.body.data, req.body.user, req.body.category);
+        const explanation = `Fallback prediction based on:\n` +
+            `- Historical average: ${stats.userCategoryAvg.toFixed(2)}\n` +
+            `- Recent performance trend: ${stats.trend.toFixed(2)}\n` +
+            `- Recent projects:\n${stats.userCategoryData.slice(-3).map(d => `  • ${d.date}: ${d.ranking}`).join('\n')}`;
+        
         res.json({ 
-            prediction,
-            method: 'fallback'
+            prediction: stats.predictedValue,
+            historicalAverage: stats.userCategoryAvg,
+            method: 'fallback',
+            explanation,
+            stats: {
+                categoryAverage: stats.userCategoryAvg,
+                predictedValue: stats.predictedValue,
+                trend: stats.trend,
+                overallAverage: stats.userOverallAvg,
+                dataPoints: stats.userCategoryDataPoints,
+                recentPerformance: stats.userCategoryData.slice(-3).map(d => ({
+                    rating: d.ranking,
+                    date: d.date
+                }))
+            }
         });
     }
 });
